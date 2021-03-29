@@ -338,7 +338,7 @@ body{
 	width: 90%;
 	margin: 0 auto;
 	background-color: var(--color-primary);
-	background-image: url("assets/shared/desktop/bg-pattern-call-to-action.svg");
+	background-image: url("assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	border-radius: 15px;
