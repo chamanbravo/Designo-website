@@ -333,3 +333,31 @@ body{
 .icon-cards:not(:last-child){
 	margin-bottom: 5rem;
 }
+
+.get-in-touch{
+	width: 90%;
+	margin: 0 auto;
+	background-color: var(--color-primary);
+	background-image: url("assets/shared/desktop/bg-pattern-call-to-action.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 15px;
+	text-align: center;
+}
+.cta-text{
+	padding: 4rem 1.5rem;
+	color: var(--color-white);
+}
+.cta-text h3{
+	font-size: 2rem;
+	font-weight: 500;
+	line-height: 1;
+}
+.cta-text p{
+	font-size: 1rem;
+	font-weight: 300;
+	margin-top: 1.5rem;
+}
+.contact-btn{
+	font-weight: 500;
+}
