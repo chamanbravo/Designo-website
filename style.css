@@ -159,16 +159,37 @@ body{
 	justify-content: space-between;
 	align-items: center;
 }
+.links{
+	position: absolute;
+	top: 5rem;
+	background-color: var(--bg, var(--color-black-light));
+	left: 0;
+	width: 100%;
+	padding: 2rem 2rem;
+	transition: all .4s ease-in-out;
+	display: none;
+}
+.links ul li{
+	list-style: none;
+}
+.links ul li:not(:last-child){
+	margin-bottom: 1.5rem;
+}
+.links ul li a{
+	color: var(--color-white);
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+}
+.cross{
+	font-size: 1.8rem;
+	display: none;
+}
 .logo{
 	width: 12rem;
 }
-.fas{
+.ham{
 	font-size: 1.8rem;
 }
-.hide-for-mobile{
-	display: none;
-}
-
 .intro{
 	padding: 5rem 0 27rem;
 	background-color: var(--color-primary);
