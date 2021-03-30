@@ -372,8 +372,46 @@ body{
 	background: var(--color-black-light);
 	color: var(--color-white);
 	padding-top: 16rem;
+	padding-bottom: 3rem;
 	text-align: center;
 }
+.fo-logo{
+	position: relative;
+}
+.fo-logo::after{
+	content: "";
+	position: absolute;
+	background-color: hsla(var(--color-white-h), var(--color-white-s), var(--color-white-l), 0.5);
+	opacity: 0.5;
+	height: 1px;
+	width: 90%;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);	
+}
 .footer-logo{
-	width: 12rem;
+	width: 12.625rem;
+	margin-bottom: 1.5rem; 
+}
+.footer-links{
+	margin-bottom: 2rem;
+}
+.footer-links li{
+	list-style: none;
+	margin: 2rem;
+	margin-bottom: 1.2rem;
+}
+.footer-links li a{
+	color: var(--color-white);
+}
+.footer-locations, .footer-contact{
+	color: hsla(var(--color-white-h), var(--color-white-s), var(--color-white-l), 0.5);
+	margin-bottom: 2rem;
+}
+.social-icons{
+	font-size: 1.5rem;
+	color: var(--color-primary);
+}
+.social-icons .fab{
+	margin-right: 0.8rem;
 }
