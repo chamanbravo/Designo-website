@@ -146,8 +146,6 @@ body{
 .header{
 	padding-top: 1.5rem;
 	padding-bottom: 1.5rem;
-	padding-left: 1rem;
-	padding-right: 1rem;
 	position: fixed;
 	top: 0;
 	background-color: #fff;
@@ -158,6 +156,8 @@ body{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-right: 1rem;
+	margin-left: 1rem;
 }
 .links{
 	position: absolute;
@@ -183,12 +183,14 @@ body{
 .cross{
 	font-size: 1.8rem;
 	display: none;
+	cursor: pointer;
 }
 .logo{
 	width: 12rem;
 }
 .ham{
 	font-size: 1.8rem;
+	cursor: pointer;
 }
 .intro{
 	padding: 5rem 0 27rem;
@@ -251,15 +253,14 @@ body{
 }
 
 .works{
+	margin: 5rem 1rem;
 	display: grid;
 	color: #fff;
-	margin: 5rem auto;
-	width: 90%;
 	grid-gap: 1.5rem;
 	grid-template-areas: 
-	"web-design"
-	"app-design"
-	"graphic-design";
+		"web-design"
+		"app-design"
+		"graphic-design";
 }
 .web-design{
 	grid-area: web-design;
@@ -320,8 +321,7 @@ body{
 }
 
 .about-us{
-	margin: 5rem auto;
-	width: 90%;
+	margin: 5rem 1rem;
 	text-align: center;
 	margin-bottom: 18rem;
 	position: relative;
@@ -359,8 +359,8 @@ body{
 
 
 .get-in-touch{
-	width: 90%;
-	margin: 0 auto;
+	margin-left: 2rem;
+	margin-right: 2rem;
 	background-color: var(--color-primary);
 	background-image: url("assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg");
 	background-repeat: no-repeat;
@@ -368,11 +368,10 @@ body{
 	border-radius: 15px;
 	text-align: center;
 	position: absolute;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translateY(-50%);
 }
 .cta-text{
-	padding: 4rem 1.5rem;
+	padding: 4rem 1rem;
 	color: var(--color-white);
 }
 .cta-text h3{
@@ -435,4 +434,147 @@ body{
 }
 .social-icons .fab{
 	margin-right: 0.8rem;
+}
+
+
+@media (min-width: 768px){
+	.hide-for-desktop{
+		display: none;
+	}
+	.header{
+		position: unset;
+		background-color: #fff;
+		z-index: unset;
+		padding-top: 3.5rem;
+		padding-bottom: 3.5rem;
+	}
+	.navbar{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
+	.links{
+		position: unset;
+		display: unset;
+		width: unset;
+		padding: unset;
+		background-color: unset;
+		color: var(--color-black);
+	}
+	.links ul li{
+		list-style: none;
+		display: inline-block;
+	}
+	.links ul li:not(:last-child){
+		margin-bottom: 0;
+		margin-right: 1.1rem;
+	}
+	.links ul li a{
+		color: var(--color-black);
+		font-size: 1.2rem;
+		font-weight: 400;
+		margin-bottom: 0;
+	}
+	.intro{
+		padding: 4rem 0 27rem;
+		background-position: 250% center;
+		border-radius: 20px;
+		margin-right: 2rem;
+		margin-left: 2rem;
+	}
+	.text{
+		margin-top: 0;
+	}
+	.text h1{ 
+		line-height: 1.1;
+		font-size: 3.2rem;
+	}
+	.text p{
+		font-size: 1.1rem;
+		font-weight: 400;
+		margin-top: 1.5rem;
+		max-width: 46ch;
+	}
+	.intro img{
+	    bottom: -43%;
+	}
+
+
+	.works{
+		margin: 5rem 2rem;
+	}
+	.web-design{
+		background: url("assets/home/tablet/image-web-design.jpg");
+	}
+	.app-design{
+		background: url("assets/home/tablet/image-app-design.jpg");
+	}
+	.graphic-design{
+		background: url("assets/home/tablet/image-graphic-design.jpg");
+	}
+	.image-card{
+		height: 200px;
+	}
+	.image-card h2{
+	    font-size: 2.6rem;
+	}
+
+
+	.about-us{
+		margin: 5rem 2rem;
+		text-align: left;
+		margin-bottom: 18rem;
+	}
+	.icon-cards{
+		display: flex;
+		justify-content: space-between;
+	}
+	.icon{
+		position: relative;
+	}
+	.icon-cards h3{
+		margin: 1.8rem 0;
+		font-size: 1.3rem;
+	    font-weight: 500;
+	    letter-spacing: 5px;
+	}
+	.icon-cards p{
+		max-width: 46ch;
+	}
+	.icon-cards:not(:last-child){
+		margin-bottom: 6rem;
+	}
+
+
+	.get-in-touch{
+		margin: 0 auto;
+		width: 90%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.cta-text{
+		padding: 3.625rem;
+		color: var(--color-white);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.cta-text h3{
+		font-size: 2.5rem;
+		max-width: 12ch;
+		font-weight: 500;
+		line-height: 1;
+	}
+	.cta-text p{
+		font-size: 1rem;
+		font-weight: 300;
+		max-width: 43ch;
+		margin-top: 1.5rem;
+	}
+	.contact-btn{
+		font-weight: 500;
+	}
+
 }
