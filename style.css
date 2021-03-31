@@ -439,7 +439,7 @@ body{
 
 @media (min-width: 768px){
 	.hide-for-desktop{
-		display: none;
+		display: none !important;
 	}
 	.header{
 		position: unset;
@@ -457,7 +457,7 @@ body{
 	}
 	.links{
 		position: unset;
-		display: unset;
+		display: unset !important;
 		width: unset;
 		padding: unset;
 		background-color: unset;
@@ -593,33 +593,27 @@ body{
 		margin-right: 2rem;
 		margin-left: 2rem;
 		display: grid;
-		grid-gap: 4rem;
-		grid-template-areas: "fo-logo fo-links fo-links"
-							 "fo-locations fo-contacts fo-social";
+		grid-gap: 2.5rem;
+		grid-template-areas: "nav-logo nav-logo"
+							 "contact-container fo-social";
 
 	}
-	.fo-logo{
-		position: relative;
-		grid-area: fo-logo;
+	.nav-logo-container{
+		grid-area: nav-logo;
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 2.5rem;
+		border-bottom: 1px solid hsla(var(--color-white-h), var(--color-white-s), var(--color-white-l), 0.2);
 	}
 	.fo-logo::after{
-		content: "";
-		position: absolute;
-		background-color: hsla(var(--color-white-h), var(--color-white-s), var(--color-white-l), 0.5);
-		opacity: 0.5;
-		height: 1px;
-		bottom: 0;
-		left: 50%;
-		transform: translateX(-50%);	
+		display: none;	
 	}
 	.footer-logo{
 		width: 12.625rem;
 		margin-bottom: unset;
 	}
 	.footer-links{
-		grid-area: fo-links;
 		margin-bottom: unset;
-		place-self: end;
 	}
 	.footer-links li{
 		list-style: none;
@@ -630,14 +624,20 @@ body{
 	.footer-links li a{
 		margin-left: 1.5rem;
 	}
+	.contact-container{
+		grid-area: contact-container;
+		display: flex;
+		justify-content: space-between;
+	}
+	.contact-container h4{
+		margin-bottom: 0.5rem;
+		font-weight: 700;
+	}
+	.contact-container p{
+		margin-bottom: 0.2rem;
+	}
 	.footer-locations, .footer-contact{
 		margin-bottom: unset;
-	}
-	.footer-locations{
-		grid-area: fo-locations;
-	}
-	.footer-contact{
-		grid-area: fo-contacts;
 	}
 	.social-icons{
 		grid-area: fo-social;
@@ -645,7 +645,7 @@ body{
 		color: var(--color-primary);
 	}
 	.social-icons .fab{
-		margin-right: 0.8rem;
+		margin-right: 0.5rem;
 	}
 	.social-icons{
 		place-self: end;
