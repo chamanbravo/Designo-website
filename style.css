@@ -445,8 +445,8 @@ body{
 		position: unset;
 		background-color: #fff;
 		z-index: unset;
-		padding-top: 3.5rem;
-		padding-bottom: 3.5rem;
+		padding-top: 3.2rem;
+		padding-bottom: 3.2rem;
 	}
 	.navbar{
 		display: flex;
@@ -649,4 +649,191 @@ body{
 		place-self: end;
 	}
 
+}
+
+
+@media (min-width: 1024px){
+	.navbar{
+		margin-left: 1.5rem;
+		margin-right: 1.5rem;
+	}
+	.intro{
+		text-align: left;
+		padding: 10rem 0 8rem;
+		background-position: 100% center;
+		flex-direction: unset;
+		justify-content: unset;
+		border-radius: 20px;
+		margin-right: 1.5rem;
+		margin-left: 1.5rem;
+	}
+	.text{
+		margin-top: 0;
+		margin-left: 2rem;
+		padding-left: 4.5rem;
+		align-items: unset;
+	}
+	.text h1{ 
+		font-size: 3rem;
+	}
+	.text p{
+		font-size: 1rem;
+		font-weight: 400;
+		margin-top: 1.5rem;
+		max-width: 46ch;
+	}
+	.intro img{
+	    bottom: -40%;
+	    right: -4.5rem;
+	    transform: unset;
+	    left: unset;
+	}
+
+
+	.works{
+		margin: 5rem 2rem;
+	}
+	.web-design{
+		background: url("assets/home/tablet/image-web-design.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.app-design{
+		background: url("assets/home/tablet/image-app-design.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.graphic-design{
+		background: url("assets/home/tablet/image-graphic-design.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.image-card{
+		height: 200px;
+	}
+	.image-card h2{
+	    font-size: 2.6rem;
+	}
+
+
+	.about-us{
+		margin: 5rem 2rem;
+		text-align: left;
+		margin-bottom: 18rem;
+	}
+	.icon-cards{
+		display: flex;
+		justify-content: space-between;
+	}
+	.icon{
+		position: relative;
+		margin-right: 4rem;
+	}
+	.icon-cards h3{
+		margin: 1.8rem 0;
+		font-size: 1.3rem;
+	    font-weight: 500;
+	    letter-spacing: 5px;
+	}
+	.icon-cards:not(:last-child){
+		margin-bottom: 6rem;
+	}
+
+
+	.get-in-touch{
+		margin: 0 auto;
+		width: 90%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.cta-text{
+		padding: 3.625rem;
+		color: var(--color-white);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.cta-text h3{
+		font-size: 2.5rem;
+		max-width: 12ch;
+		font-weight: 500;
+		line-height: 1;
+	}
+	.cta-text p{
+		font-size: 1rem;
+		font-weight: 300;
+		max-width: 43ch;
+		margin-top: 1.5rem;
+	}
+	.contact-btn{
+		font-weight: 500;
+	}
+
+
+	.footer{
+		padding-top: 16rem;
+		padding-bottom: 5rem;
+		text-align: left
+	}
+	.footer-elements{
+		margin-right: 2rem;
+		margin-left: 2rem;
+		display: grid;
+		grid-gap: 2.5rem;
+		grid-template-areas: "nav-logo nav-logo"
+							 "contact-container fo-social";
+
+	}
+	.nav-logo-container{
+		grid-area: nav-logo;
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 2.5rem;
+		border-bottom: 1px solid hsla(var(--color-white-h), var(--color-white-s), var(--color-white-l), 0.2);
+	}
+	.fo-logo::after{
+		display: none;	
+	}
+	.footer-logo{
+		width: 12.625rem;
+		margin-bottom: unset;
+	}
+	.footer-links{
+		margin-bottom: unset;
+	}
+	.footer-links li{
+		list-style: none;
+		display: inline-block;
+		margin: unset;
+		margin-bottom: unset;
+	}
+	.footer-links li a{
+		margin-left: 1.5rem;
+	}
+	.contact-container{
+		grid-area: contact-container;
+		display: flex;
+		justify-content: space-between;
+	}
+	.contact-container h4{
+		margin-bottom: 0.5rem;
+		font-weight: 700;
+	}
+	.contact-container p{
+		margin-bottom: 0.2rem;
+	}
+	.footer-locations, .footer-contact{
+		margin-bottom: unset;
+	}
+	.social-icons{
+		grid-area: fo-social;
+		font-size: 1.5rem;
+		color: var(--color-primary);
+	}
+	.social-icons .fab{
+		margin-right: 0.5rem;
+	}
+	.social-icons{
+		place-self: end;
+	}
 }
