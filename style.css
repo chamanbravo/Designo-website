@@ -539,15 +539,13 @@ body{
 	}
 	.icon{
 		position: relative;
+		margin-right: 4rem;
 	}
 	.icon-cards h3{
 		margin: 1.8rem 0;
 		font-size: 1.3rem;
 	    font-weight: 500;
 	    letter-spacing: 5px;
-	}
-	.icon-cards p{
-		max-width: 46ch;
 	}
 	.icon-cards:not(:last-child){
 		margin-bottom: 6rem;
