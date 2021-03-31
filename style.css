@@ -507,12 +507,18 @@ body{
 	}
 	.web-design{
 		background: url("assets/home/tablet/image-web-design.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 	.app-design{
 		background: url("assets/home/tablet/image-app-design.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 	.graphic-design{
 		background: url("assets/home/tablet/image-graphic-design.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 	.image-card{
 		height: 200px;
@@ -575,6 +581,74 @@ body{
 	}
 	.contact-btn{
 		font-weight: 500;
+	}
+
+
+	.footer{
+		padding-top: 16rem;
+		padding-bottom: 5rem;
+		text-align: left
+	}
+	.footer-elements{
+		margin-right: 2rem;
+		margin-left: 2rem;
+		display: grid;
+		grid-gap: 4rem;
+		grid-template-areas: "fo-logo fo-links fo-links"
+							 "fo-locations fo-contacts fo-social";
+
+	}
+	.fo-logo{
+		position: relative;
+		grid-area: fo-logo;
+	}
+	.fo-logo::after{
+		content: "";
+		position: absolute;
+		background-color: hsla(var(--color-white-h), var(--color-white-s), var(--color-white-l), 0.5);
+		opacity: 0.5;
+		height: 1px;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);	
+	}
+	.footer-logo{
+		width: 12.625rem;
+		margin-bottom: unset;
+	}
+	.footer-links{
+		grid-area: fo-links;
+		margin-bottom: unset;
+		place-self: end;
+	}
+	.footer-links li{
+		list-style: none;
+		display: inline-block;
+		margin: unset;
+		margin-bottom: unset;
+	}
+	.footer-links li a{
+		margin-left: 1.5rem;
+	}
+	.footer-locations, .footer-contact{
+		margin-bottom: unset;
+	}
+	.footer-locations{
+		grid-area: fo-locations;
+	}
+	.footer-contact{
+		grid-area: fo-contacts;
+	}
+	.social-icons{
+		grid-area: fo-social;
+		font-size: 1.5rem;
+		color: var(--color-primary);
+	}
+	.social-icons .fab{
+		margin-right: 0.8rem;
+	}
+	.social-icons{
+		place-self: end;
 	}
 
 }
