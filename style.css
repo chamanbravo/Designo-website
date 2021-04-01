@@ -259,7 +259,6 @@ body{
 .works{
 	margin: 5rem 1rem;
 	display: grid;
-	color: #fff;
 	grid-gap: 1.5rem;
 	grid-template-areas: 
 		"web-design"
@@ -268,33 +267,30 @@ body{
 }
 .web{
 	grid-area: web-design;
-}
-.app{
-	grid-area: app-design;
-}
-.graphic{
-	grid-area: graphic-design;
-}
-
-.web-design{
 	background: url("assets/home/mobile/image-web-design.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	border-radius: 10px;
 }
-.app-design{
+.app{
+	grid-area: app-design;
 	background: url("assets/home/mobile/image-app-design.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	border-radius: 10px;
 }
-.graphic-design{
+.graphic{
+	grid-area: graphic-design;
 	background: url("assets/home/mobile/image-graphic-design.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	border-radius: 10px;
 }
+
 .image-card{
 	color: #fff;
 	height: 250px;
-	border-radius: 15px;
+	border-radius: 10px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -303,7 +299,7 @@ body{
 }
 .image-card::before{
 	content: " ";
-	border-radius: 15px;
+	border-radius: 10px;
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -526,21 +522,6 @@ body{
 	.works{
 		margin: 5rem 2rem;
 	}
-	.web-design{
-		background: url("assets/home/tablet/image-web-design.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-	.app-design{
-		background: url("assets/home/tablet/image-app-design.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-	.graphic-design{
-		background: url("assets/home/tablet/image-graphic-design.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
 	.image-card{
 		height: 200px;
 	}
@@ -717,23 +698,32 @@ body{
 		"web-design graphic-design";
 		grid-auto-columns: 1fr;
 	}
-	.web-design{
+	.web{
+		grid-area: web-design;
 		background: url("assets/home/desktop/image-web-design-small.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
+		border-radius: 10px;
 	}
-	.app-design{
+	.app{
+		grid-area: app-design;
 		background: url("assets/home/desktop/image-app-design.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
+		border-radius: 10px;
 	}
-	.graphic-design{
+	.graphic{
+		grid-area: graphic-design;
 		background: url("assets/home/desktop/image-graphic-design.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
+		border-radius: 10px;
+	}
+	.app, .graphic{
+		height: 250px;
 	}
 	.image-card{
-		height: 250px;
+		height: 100%;
 	}
 	.image-card h2{
 	    font-size: 2.6rem;
