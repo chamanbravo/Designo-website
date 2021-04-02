@@ -1236,6 +1236,14 @@ body{
 	color: var(--color-white);
 	overflow: hidden;
 }
+.about-img, .talent-img, .real-img{
+	width: 100%;
+}
+.about-img img, .talent-img img, .real-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
 .about-us-text{
 	margin: 5rem 1.5rem 4rem;
 }
@@ -1245,7 +1253,7 @@ body{
 	margin-bottom: 2rem;
 }
 
-.talent{
+.talent, .real-deal{
 	margin-top: 5rem;
 	background-color: var(--color-primary-lighter);
 	background-image: url("assets/shared/desktop/bg-pattern-three-circles.svg");
@@ -1260,30 +1268,189 @@ body{
 	color: var(--color-black);
 	overflow: hidden;
 }
-.talent-text{
+.talent-text, .real-deal-text{
 	margin: 4rem 1.5rem 5rem;
 }
-.talent-text h2{
+.talent-text h2, .real-deal h2{
 	font-size: 1.8rem;
 	font-weight: 500;
 	letter-spacing: 2px;
 	color: var(--color-primary);
 }
-.talent-text p{
+.talent-text p, .real-deal p{
 	margin-top: 1.8rem;
 }
 
 .locations{
 	text-align: center;
-	margin: 2rem 1rem;
+	margin: 5rem 1rem;
+}
+.country-card:not(:last-child){
+	margin-bottom: 4rem;
+}
+.country{
+	position: relative;
 }
 .country-card p{
 	letter-spacing: 3px;
 	font-weight: 500;
 	font-size: 1.1rem;
+	margin-top: 1.5rem;
 }
 .country-card .btn-white{
 	background-color: var(--color-primary);
 	color: var(--color-white);
 	margin-top: 1.5rem;
+}
+
+.country::before{
+	content: "";
+	position: absolute;
+	background-image: url("assets/shared/desktop/bg-pattern-small-circle.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+.country-card:nth-child(2) .country::before{
+	transform: rotate(-90deg);
+}
+.country-card:nth-child(3) .country::before{
+	transform: rotate(180deg);
+}
+
+.real-deal{
+	margin-bottom: 4rem;
+}
+
+@media (min-width: 768px){
+	.about{
+		margin-top: 0;
+		margin-left: 2rem;
+		margin-right: 2rem;
+		border-radius: 20px;
+		background-image: url("assets/about/desktop/bg-pattern-hero-about-desktop.svg");
+		background-repeat: no-repeat;
+		background-position: -50% -4rem;
+	}
+	.about-us-text{
+		margin: 3rem 4rem 4rem;
+	}
+	.about-us-text h1{
+		font-size: 3rem;
+		margin-bottom: 1.8rem;
+	}
+	.about-us-text p{
+		font-size: 1.02rem;
+	}
+
+	.talent{
+		margin-left: 2rem;
+		margin-right: 2rem;
+		border-radius: 20px;
+	}
+	.talent-text{
+		margin: 3rem 4rem 4rem;
+	}
+	.talent-text h2{
+		font-size: 2.5rem;
+	}
+	.talent-text p{
+		font-size: 1.02rem;
+	}
+
+	.real-deal{
+		margin-left: 2rem;
+		margin-right: 2rem;
+		border-radius: 20px;
+	}
+	.real-deal-text{
+		margin: 3rem 4rem 4rem;
+	}
+	.real-deal-text h2{
+		font-size: 2.5rem;
+	}
+	.real-deal-text p{
+		font-size: 1.02rem;
+	}
+}
+
+@media (min-width: 1024px){
+	.about, .talent, .real-deal{
+		display: block;
+		flex-direction: unset;
+		text-align: left;
+		position: relative;
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+		background-position: -40% -4rem;
+	}
+	.about-us-text, .real-deal-text{
+		max-width: 36ch;
+	}
+	.about-img, .talent-img, .real-img{
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+		width: 476px;
+	}
+	.talent{
+		background-image: url("assets/shared/desktop/bg-pattern-three-circles.svg");
+		background-repeat: no-repeat;
+		background-position: 95% 100%;
+		background-size: contain;
+	}
+	.talent-img{
+		left: 0;
+	}
+	.talent-text{
+		max-width: 36ch;	
+		float: right;
+	}
+
+	.locations{
+		display: flex;
+		justify-content: space-between;
+		margin-right: 2rem;
+		margin-left: 2rem;
+	}
+}
+
+@media (min-width: 1200px){
+	.about, .talent, .locations, .real-deal{
+		margin-left: 4rem;
+		margin-right: 4rem;
+	}
+	.about-us-text, .real-deal-text{
+		max-width: 45ch;
+		margin-left: 5.5rem;
+	}
+	.talent-text{
+		max-width: 45ch;
+		margin-right: 5.5rem;
+	}
+	.about-img, .talent-img, .real-img{
+		width: 500px;
+	}
+}
+@media (min-width: 1300px){
+	.about-us-text, .real-deal-text, .talent-text{
+		max-width: 50ch;
+	}
+	.about-img, .talent-img, .real-img{
+		width: 500px;
+	}
+}
+@media (min-width: 1400px){
+	.about, .talent, .locations, .real-deal{
+		margin-left: 10rem;
+		margin-right: 10rem;
+	}
+	.about-us-text, .real-deal-text, .talent-text{
+		max-width: 45ch;
+	}
+
 }
