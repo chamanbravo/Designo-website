@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
 
-*{
+*, img, a{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -1214,4 +1214,76 @@ body{
 .footer-container{
 	max-width: 1600px;
 	margin: 0 auto;
+}
+
+
+/*++++++++++++++
+  + About Page +
+  ++++++++++++++
+*/
+
+.about{
+	margin-top: 5rem;
+	background-color: var(--color-primary);
+	background-image: url("assets/about/mobile/bg-pattern-hero-about-mobile.svg");
+	background-repeat: no-repeat;
+	background-position: 95% 0%;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: var(--color-white);
+	overflow: hidden;
+}
+.about-us-text{
+	margin: 5rem 1.5rem 4rem;
+}
+.about-us-text h1{
+	font-weight: 500;
+	font-size: 2.2rem;
+	margin-bottom: 2rem;
+}
+
+.talent{
+	margin-top: 5rem;
+	background-color: var(--color-primary-lighter);
+	background-image: url("assets/shared/desktop/bg-pattern-three-circles.svg");
+	background-repeat: no-repeat;
+	background-position: 95% 100%;
+	background-size: contain;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: var(--color-black);
+	overflow: hidden;
+}
+.talent-text{
+	margin: 4rem 1.5rem 5rem;
+}
+.talent-text h2{
+	font-size: 1.8rem;
+	font-weight: 500;
+	letter-spacing: 2px;
+	color: var(--color-primary);
+}
+.talent-text p{
+	margin-top: 1.8rem;
+}
+
+.locations{
+	text-align: center;
+	margin: 2rem 1rem;
+}
+.country-card p{
+	letter-spacing: 3px;
+	font-weight: 500;
+	font-size: 1.1rem;
+}
+.country-card .btn-white{
+	background-color: var(--color-primary);
+	color: var(--color-white);
+	margin-top: 1.5rem;
 }
