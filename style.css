@@ -1454,3 +1454,130 @@ body{
 	}
 
 }
+
+
+/* +++++++++++
+   +Locations+
+   +++++++++++
+   */
+
+.location-card{
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+.map-card{
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: column-reverse;
+	text-align: center;
+	background-color: var(--color-primary-lighter);
+	overflow: hidden;
+}
+.locations-text{
+	padding: 3rem 0;
+	background: url("assets/shared/desktop/bg-pattern-three-circles.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.locations-text h1{
+	color: var(--color-primary);
+	font-size: 2.2rem;
+	font-weight: 500;
+	margin-bottom: 2rem;
+}
+.address h2, .location-contact h2{
+	font-size: 1rem;
+}
+.address{
+	margin-bottom: 1.5rem;
+}
+
+
+@media (min-width: 768px){
+	.location-card{
+		margin-top: 0;
+		margin-bottom: 0;
+		margin-right: 2rem;
+		margin-left: 2rem;
+	}
+	.map-card{
+		margin-top: 0;
+		margin-bottom: 3rem;
+		
+		border-radius: 20px;
+	}
+	iframe{
+		height: 300px;
+	}
+	.locations-text{
+		text-align: left;
+		padding: 5rem 5rem;
+	}
+	.locations-text h1{
+		font-size: 3rem;
+		font-weight: 500;
+	}
+	.address h2, .location-contact h2{
+		font-size: 1rem;
+	}
+	.map-card-contact{
+		text-align: left;
+		display: inline-flex;
+	}
+	.address{
+		margin-bottom: 0;
+		margin-right: 5rem;
+	}
+
+}
+
+@media (min-width: 1024px){
+	.map-card{
+		flex-direction: unset;
+		justify-content: space-between;
+		align-items: center;
+	}
+	iframe{
+		height: 370px;
+		width: 370px;
+	}
+	.locations-text{
+		padding: 5rem 0 5rem 5rem;
+	}
+	.reverse-map-card{
+		flex-direction: row-reverse;
+	}
+	.reverse-map-card .locations-text{
+		padding: 5rem 5rem 5rem 0rem;
+	}
+}
+
+@media (min-width: 1200px){
+	.location-card{
+		margin-left: 4rem;
+		margin-right: 4rem;
+	}
+	iframe{
+		height: 390px;
+		width: 390px;
+	}
+}
+
+@media (min-width: 1200px){
+	iframe{
+		height: 420px;
+		width: 420px;
+	}
+}
+
+@media (min-width: 1400px){
+	.location-card{
+		margin-left: 10rem;
+		margin-right: 10rem;
+	}
+	iframe{
+		height: 430px;
+		width: 430px;
+	}
+}
+
