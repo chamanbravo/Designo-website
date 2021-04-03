@@ -1601,6 +1601,12 @@ body{
 	padding: 4rem 2rem;
 	text-align: center;
 	color: var(--color-white);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.contact-form{
+	width: 100%;
 }
 .contact-text{
 	margin-bottom: 3rem;
@@ -1608,6 +1614,9 @@ body{
 .contact-text h1{
  	font-weight: 500;
  	margin-bottom: 2rem;
+}
+.contact-text p{
+	max-width: 40ch;
 }
 .input{
 	position: relative;
@@ -1653,8 +1662,70 @@ body{
 }
 form .btn-white{
 	margin-top: 1rem;
+	cursor: pointer;
 }
 
-@media (768px){
-	
+@media (min-width: 768px){
+	.contact-form-box{
+		margin-top: 0;
+		margin-left: 2rem;
+		margin-right: 2rem;
+		border-radius: 20px;
+		padding: 4rem 5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+	}
+	.contact-text h1{
+		font-size: 3rem;
+		margin-bottom: 2rem;
+	}
+	.contact-text p{
+		max-width: 44ch;
+		text-align: left;
+	}
+	.contact-form{
+		width: 100%;
+	}
+	.form-input{
+		font-size: 1.2rem;
+	}
+
 }
+
+@media (min-width: 1024px){
+	.contact-form-box{
+		flex-direction: unset;
+		justify-content: space-between;
+	}
+	.contact-form{
+		text-align: right;
+	}
+	.contact-text{
+		margin-right: 5rem;
+		text-align: left;
+	}
+	.contact-text h1{
+		font-size: 4rem;
+	}
+	.contact-text p{
+		max-width: 108ch;
+		font-size: 1.02rem;
+	}
+
+}
+
+@media (min-width: 1200px){
+	.contact-form-box{
+		margin-right: 4rem;
+		margin-left: 4rem;
+	}
+}
+
+@media (min-width: 1400px){
+	.contact-form-box{
+		margin-right: 10rem;
+		margin-left: 10rem;
+	}
+}	
