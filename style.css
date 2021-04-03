@@ -1581,3 +1581,12 @@ body{
 	}
 }
 
+
+/* +++++++++++
+   ++Contact++
+   +++++++++++
+   */
+
+.footer-no-top-padding{
+		padding-top: 5rem;
+}
