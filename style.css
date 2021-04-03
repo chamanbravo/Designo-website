@@ -1302,7 +1302,9 @@ body{
 	color: var(--color-white);
 	margin-top: 1.5rem;
 }
-
+.country-card .btn-white:hover{
+	background-color: var(--color-primary-light);
+} 
 .country::before{
 	content: "";
 	position: absolute;
@@ -1589,4 +1591,70 @@ body{
 
 .footer-no-top-padding{
 		padding-top: 5rem;
+}
+.contact-form-box{
+	margin-top: 5rem;
+	background: var(--color-primary);
+	background-image: url("assets/contact/mobile/bg-pattern-hero-contact-mobile.svg");
+	background-size: 200%;
+	background-repeat: no-repeat;
+	padding: 4rem 2rem;
+	text-align: center;
+	color: var(--color-white);
+}
+.contact-text{
+	margin-bottom: 3rem;
+}
+.contact-text h1{
+ 	font-weight: 500;
+ 	margin-bottom: 2rem;
+}
+.input{
+	position: relative;
+	margin-bottom: 2rem;
+}
+.form-input{
+	width: 100%;
+	border: none;
+	background: none;
+	border-bottom: 1px solid var(--color-white);
+	line-height: 1.2;
+	padding: 0 0 0.8rem 1rem;
+	font-size: 1rem;
+	color: var(--color-white)
+	box-shadow: none;
+	font-family: 'Jost', sans-serif;
+	resize: none;
+	transition: all 0.2s ease;
+	cursor: pointer;
+	appearance: none;
+	outline: none;
+}
+.form-input:hover{
+	border-bottom: 2px solid var(--color-white);
+	margin-bottom: -1px;
+}
+.field-error{
+	display: inline-flex;
+	position: absolute;
+	align-items: center;
+	right: 0;
+	display: none;
+}
+.field-error p{
+	font-size: 0.7rem;
+	font-weight: 300;
+	font-style: italic;
+
+}
+.field-error img{
+	margin-left: 0.5rem;
+	height: 100%;
+}
+form .btn-white{
+	margin-top: 1rem;
+}
+
+@media (768px){
+	
 }
