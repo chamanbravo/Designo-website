@@ -1759,7 +1759,24 @@ form .btn-white{
 .web-design-intro p{
 	max-width: 35ch;
 }
+
+.work-samples{
+	margin-left: 1rem;
+	margin-right: 1rem;
+	display: grid;
+	grid-gap: 1.5rem;
+}
+.sample-card img{
+	max-width: 100%;
+}
 @media (min-width: 1024px){
+	.work-samples{
+		margin-left: 1rem;
+		margin-right: 1rem;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 1.5rem;
+	}
 	.web-design-works{
 		display: grid;
 		grid-template-areas: "app-design graphic-design";
