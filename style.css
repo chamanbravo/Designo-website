@@ -1738,7 +1738,7 @@ form .btn-white{
 
 
 
-.web-design-intro{
+.design-intro{
 	margin-top: 5rem;
 	background: var(--color-primary);
 	background-image: url("assets/web-design/desktop/bg-pattern-intro-web.svg");
@@ -1751,12 +1751,12 @@ form .btn-white{
 	flex-direction: column;
 	align-items: center;
 }
-.web-design-intro h1{
+.design-intro h1{
 	font-weight: 500;
 	font-size: 2.4rem;
 	margin-bottom: 2rem;
 }
-.web-design-intro p{
+.design-intro p{
 	max-width: 38ch;
 }
 
@@ -1806,7 +1806,7 @@ form .btn-white{
 }
 
 @media (min-width: 768px){
-	.web-design-intro{
+	.design-intro{
 		margin-left: 2rem;
 		margin-right: 2rem;
 		margin-top: 0;
@@ -1838,7 +1838,7 @@ form .btn-white{
 }
 
 @media (min-width: 1200px){
-	.web-design-intro{
+	.design-intro{
 		margin-right: 4rem;
 		margin-left: 4rem;
 	}
@@ -1856,5 +1856,31 @@ form .btn-white{
 	.work-samples{
 		margin-right: 10rem;
 		margin-left: 10rem;
+	}
+}
+
+/* +++++++++++++
+   + App-Design+
+   +++++++++++++ */
+
+@media (min-width: 1024px){
+	.app-design-works{
+		display: grid;
+		grid-template-areas: "graphic-design web-design";
+		grid-auto-columns: 1fr;
+	}
+}
+
+
+
+/* +++++++++++++
+   + Graphic-Design+
+   +++++++++++++ */
+
+@media (min-width: 1024px){
+	.graphic-design-works{
+		display: grid;
+		grid-template-areas: "app-design web-design";
+		grid-auto-columns: 1fr;
 	}
 }
