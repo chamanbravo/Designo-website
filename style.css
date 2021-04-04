@@ -1757,25 +1757,75 @@ form .btn-white{
 	margin-bottom: 2rem;
 }
 .web-design-intro p{
-	max-width: 35ch;
+	max-width: 38ch;
 }
 
 .work-samples{
 	margin-left: 1rem;
 	margin-right: 1rem;
+	margin-top: 5rem;
 	display: grid;
-	grid-gap: 1.5rem;
+	grid-gap: 1.8rem;
+}
+.sample-card{
+	border-radius: 20px;
 }
 .sample-card img{
 	max-width: 100%;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
 }
+.card-link{
+	padding: 2rem 1rem;
+	text-align: center;
+	color: var(--color-black);
+	background: var(--color-primary-lighter);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+.card-link:hover {
+	background: var(--color-primary);
+	color: var(--color-white);
+}
+.card-link:hover h3{
+	color: var(--color-white);
+}
+.text-component h3{
+	color: var(--color-primary);
+	font-size: 1.5rem;
+	font-weight: 500;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	margin-bottom: 1.5rem;
+}
+.text-component p{
+	max-width: 30ch;
+}
+
+@media (min-width: 768px){
+	.web-design-intro{
+		margin-left: 2rem;
+		margin-right: 2rem;
+		margin-top: 0;
+		border-radius: 20px;
+		padding: 3rem 2rem;
+	}
+	.work-samples{
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
+
+}
+
+
 @media (min-width: 1024px){
 	.work-samples{
-		margin-left: 1rem;
-		margin-right: 1rem;
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		grid-gap: 1.5rem;
+		grid-gap: 1.8rem;
 	}
 	.web-design-works{
 		display: grid;
