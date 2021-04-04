@@ -1817,6 +1817,9 @@ form .btn-white{
 		margin-left: 2rem;
 		margin-right: 2rem;
 	}
+	.work-samples{
+		grid-template-columns: repeat(2, 1fr);
+	}
 
 }
 
@@ -1831,5 +1834,27 @@ form .btn-white{
 		display: grid;
 		grid-template-areas: "app-design graphic-design";
 		grid-auto-columns: 1fr;
+	}
+}
+
+@media (min-width: 1200px){
+	.web-design-intro{
+		margin-right: 4rem;
+		margin-left: 4rem;
+	}
+	.work-samples{
+		margin-right: 4rem;
+		margin-left: 4rem;
+	}
+}
+
+@media (min-width: 1400px){
+	.web-design-intro{
+		margin-right: 10rem;
+		margin-left: 10rem;
+	}
+	.work-samples{
+		margin-right: 10rem;
+		margin-left: 10rem;
 	}
 }
