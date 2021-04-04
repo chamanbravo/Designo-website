@@ -1729,3 +1729,40 @@ form .btn-white{
 		margin-left: 10rem;
 	}
 }	
+
+
+/* ++++++++++++
+   +Web-design+
+   ++++++++++++
+   */
+
+
+
+.web-design-intro{
+	margin-top: 5rem;
+	background: var(--color-primary);
+	background-image: url("assets/web-design/desktop/bg-pattern-intro-web.svg");
+	background-repeat: no-repeat;
+	background-position: right center;
+	color: var(--color-white);
+	padding: 5rem 2rem;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.web-design-intro h1{
+	font-weight: 500;
+	font-size: 2.4rem;
+	margin-bottom: 2rem;
+}
+.web-design-intro p{
+	max-width: 35ch;
+}
+@media (min-width: 1024px){
+	.web-design-works{
+		display: grid;
+		grid-template-areas: "app-design graphic-design";
+		grid-auto-columns: 1fr;
+	}
+}
