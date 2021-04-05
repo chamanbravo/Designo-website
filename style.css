@@ -248,6 +248,10 @@ body{
 	background-color: var(--color-primary-light);
 	color: #fff;
 }
+.submit-btn{
+	outline: none;
+	border: none;
+}
 .intro img{
     width: 39rem;
     position: absolute;
@@ -1884,3 +1888,4 @@ form .btn-white{
 		grid-auto-columns: 1fr;
 	}
 }
+
