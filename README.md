@@ -20,8 +20,8 @@ Multipage website of Designo Agency.
 
 ### Links
 
-- [Solution](https://github.com/chamanbravo/Designo-website)
-- [Live Site](https://designoagency.vercel.app/)
+- Solution: [https://github.com/chamanbravo/Designo-website](https://github.com/chamanbravo/Designo-website)
+- Live Site: [https://designoagency.vercel.app](https://designoagency.vercel.app/)
 
 ## My process
 
