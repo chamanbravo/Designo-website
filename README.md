@@ -3,7 +3,7 @@
 
 Multipage website of Designo Agency.
 
-![Design preview for the Manage landing page coding challenge](./design-preview/desktop.jpg)
+![Design preview](./design-preview/desktop.jpg)
 
 
 ## Table of contents
